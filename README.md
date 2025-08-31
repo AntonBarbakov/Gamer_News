@@ -36,8 +36,9 @@ The application aggregates news from **YouTube channels** and **gaming websites*
 ---
 
 ## 📂 Project Structure
+```bash
 Gamer_News/
-│── frontend/ # Frontend (HTML, CSS, JS)
-│── backend/ # Backend (Node.js + Express)
-│── db/ # SQL scripts and migrations
-│── README.md
+├── frontend/   # Frontend (HTML, CSS, JS)
+├── backend/    # Backend (Node.js + Express)
+├── db/         # SQL scripts and migrations
+└── README.md

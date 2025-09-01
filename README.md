@@ -42,3 +42,6 @@ Gamer_News/
 ├── backend/    # Backend (Node.js + Express)
 ├── db/         # SQL scripts and migrations
 └── README.md
+
+## 👨‍💻 Author
+Developed by **Anton Barbakov**

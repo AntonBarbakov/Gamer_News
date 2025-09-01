@@ -3,3 +3,10 @@
 @use 'utils';
 @use 'globals';
 @use 'fonts';
+
+body{
+    background-color: darkseagreen;
+    p{
+        color:red;
+    }
+}

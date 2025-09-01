@@ -1,0 +1,27 @@
+{
+  "name": "gamer_news",
+  "version": "1.0.0",
+  "description": "![Status](https://img.shields.io/badge/status-in%20development-yellow)  \r ![License](https://img.shields.io/badge/license-MIT-blue)  \r ![Made with](https://img.shields.io/badge/Made%20with-Node.js-green)  \r ![Database](https://img.shields.io/badge/DB-PostgreSQL-lightblue)  \r ![Frontend](https://img.shields.io/badge/frontend-HTML%20%7C%20CSS%20%7C%20JS-orange)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch .",
+    "build:css": "sass --style=compressed --no-source-map frontend/styles/main.scss frontend/styles/main.css",
+    "watch:css": "sass --watch frontend/styles/main.scss:frontend/styles/main.css",
+    "check:scss": "sass --no-source-map frontend/styles/main.scss > /dev/null",
+    "build": "npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonBarbakov/Gamer_News.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonBarbakov/Gamer_News/issues"
+  },
+  "homepage": "https://github.com/AntonBarbakov/Gamer_News#readme",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}

@@ -33,17 +33,16 @@ jobs:
       # Simple validation step to ensure the expected file exists
       - name: Validate site files
         run: test -f frontend/index.html
+
       - name: Check SCSS compiles
         if: github.event_name == 'pull_request'
         run: npm run check:scss
 
       # Only upload files on push to main branch
-      - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: npm }
-      - run: npm ci
       - name: Build CSS
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npm run build
+        
       - name: Upload static files
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,16 @@
+name: Enforce PR rules
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  check-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure PR is only from test branch
+        run: |
+          if [ "${{ github.head_ref }}" != "test" ]; then
+            echo "❌ Only PRs from 'test' branch are allowed into main."
+            exit 1
+          fi

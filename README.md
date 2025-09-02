@@ -19,13 +19,13 @@ The application aggregates news from **YouTube channels** and **gaming websites*
 - 👤 User authentication & registration (Email + Google OAuth)  
 - 📰 News feed with categories and tags  
 - 💾 Store articles in PostgreSQL/MySQL  
-- 📱 Responsive UI with HTML, CSS, Bootstrap, JS  
+- 📱 Responsive UI with HTML, CSS, Sass(SCSS), JS  
 - ☁️ Deployment to Vercel / Render / Railway  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, Bootstrap, JavaScript  
+- **Frontend:** HTML, CSS, Sass(SCSS), JavaScript  
 - **Backend:** Node.js (Express)  
 - **Database:** PostgreSQL / MySQL  
 - **Scraping / APIs:** YouTube API, Cheerio  
@@ -42,6 +42,8 @@ Gamer_News/
 ├── backend/    # Backend (Node.js + Express)
 ├── db/         # SQL scripts and migrations
 └── README.md
+
+---
 
 ## 👨‍💻 Author
 Developed by **Anton Barbakov**
